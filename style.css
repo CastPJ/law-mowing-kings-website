@@ -74,6 +74,7 @@ img {
 
 .thumbnail {
   background-image: url(/images/Photo-1.jpg);
+  filter: brightness(70%);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
@@ -85,7 +86,7 @@ img {
 }
 
 .main-content {
-  background-color: rgba(243, 250, 232, 255);
+  background-color: rgba(176, 209, 130, 255);
   display: flex;
   flex-direction: column;
   border-bottom: solid 1px rgba(44, 71, 62, 255);
@@ -95,6 +96,7 @@ img {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgba(44, 71, 62, 255);
   margin: 1rem;
+  max-width: 80rem;
 }
 
 .contact-btn {
@@ -122,10 +124,42 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: fit-content;
-  /* width: 140rem; */
   gap: 1rem;
   margin: 1rem;
   grid-auto-rows: minmax(10px, auto);
+}
+
+.secondary-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2rem;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-image {
+  width: 12rem;
+  height: 12rem;
+}
+
+.icon-title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgba(44, 71, 62, 255);
+  text-align: center;
+}
+
+.icon-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgba(44, 71, 62, 255);
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .footer {
@@ -161,5 +195,9 @@ img {
   .right-section {
     width: 80rem;
     padding: 2rem;
+  }
+
+  .secondary-section {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
