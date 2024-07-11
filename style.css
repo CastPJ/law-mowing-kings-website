@@ -163,8 +163,28 @@ img {
 }
 
 .footer {
-  background-color: rgb(236, 216, 216);
-  height: 25%;
+  background-color: rgb(46, 46, 46);
+}
+
+.footer-grid {
+  color: white;
+  padding: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8rem;
+}
+
+.foot-el {
+  margin-bottom: 1rem;
+  max-width: 12rem;
+}
+
+.foot-title {
+  margin-bottom: 4px;
+}
+
+li:hover {
+  color: rgb(222, 247, 184);
+  cursor: pointer;
 }
 
 @media (min-width: 720px) {
@@ -173,6 +193,15 @@ img {
   }
   .right-section {
     width: 80rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 30%;
+  }
+
+  .foot-el {
+    margin-right: 1rem;
   }
 }
 
@@ -199,5 +228,15 @@ img {
 
   .secondary-section {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    width: 30%;
+  }
+
+  .foot-el {
+    max-width: 10rem;
   }
 }
